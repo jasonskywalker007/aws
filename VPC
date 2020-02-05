@@ -1,0 +1,25 @@
+How to creaet a VPC
+
+Create VPC1
+Create VPC internet gateway
+    attach to the VPC1
+Create the subnet for the VPC1
+    select the VPC1
+Create a route table
+    select the VPC1
+    in Routes tab, add the route to go to internet
+    in subnet Associations, add the subnet
+
+
+How to create VPN
+Create virtual private gateway - VPG
+    attach to VPC1
+Create customer gateway VPC2-CG with EC2-site2 external IP
+Create site-to-stie VPN connection
+    VPN connection with VPG and VPC2-CG
+    static routing with other side network
+Update route table to see VPC2
+    route tables 
+    route propagation to Yes
+download configuration for your on side environment (Ex:on-premised or another AWS instance)
+

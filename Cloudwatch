@@ -1,0 +1,15 @@
+AWS Cloudwatch
+
+SNS dashboard first
+Create a topic
+Click Topic, Actions, Subscribe to topic
+Give protocol and alert email
+
+Cloudwatch
+Metrics, (EC2), (CPU), Graphed metrics, Actions, alarm icon
+Name of alarm, Whenever is < 25%, Period (1m)
+Under Actions, Send notification to (the Topic just created)
+
+IAM
+Create a Policy first with EC2 service, with start/stop Action
+Next, create a roles, choose a service and the policy to apply to it.
