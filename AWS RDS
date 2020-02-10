@@ -1,0 +1,20 @@
+
+AWS EC2 part
+create an EC2 instance with default setting
+ssh into the EC2 instance
+sudo yum update
+sudo yum install mysql57
+
+
+AWS RDS part
+create RDS by default setting
+    choose mysql (can be other type of database enginee)
+    different VPC for internal
+create a security group
+    add inbound rule: type: mysql, source: EC2 IP 
+    add inbound rule: type: all traffic, source: all
+apply the security group to the RDS instance
+
+In AWS EC2 instance
+Connect to RDS mysql instance
+    mysql -h Host_IP -u admin -p
