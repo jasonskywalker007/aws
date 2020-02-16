@@ -10,6 +10,13 @@ Create a route table
     in Routes tab, add the route to go to internet
     in subnet Associations, add the subnet
 
+Chnage a VPC to public VPC
+Select the VPC, Action, Modify auto-assign IP address
+    Enable Auto-assign Public IPv4
+Select the VPC, Edit DNS hostnames
+    Enable DNS hostnames    
+
+
 
 How to create VPN
 Create virtual private gateway - VPG
