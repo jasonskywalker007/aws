@@ -16,6 +16,13 @@ Select the VPC, Action, Modify auto-assign IP address
 Select the VPC, Edit DNS hostnames
     Enable DNS hostnames    
 
+NAT
+Create a NAT gateway
+    Need to place in a public subnet
+    With a Elastic IPv4 
+Create a new route table in that public subnet's VPC
+    Add the Subnet Association in the route table (private subnets)
+    Add 0.0.0.0/0 and target to NAT gateway
 
 
 How to create VPN
