@@ -20,9 +20,43 @@ NAT
 Create a NAT gateway
     Need to place in a public subnet
     With a Elastic IPv4 
-Create a new route table in that public subnet's VPC
+Create a new route table (Private subnet) in that public subnet's VPC
     Add the Subnet Association in the route table (private subnets)
     Add 0.0.0.0/0 and target to NAT gateway
+
+VPC Peering
+Configure the VPC peering 
+    Configure name, request VPC (from), select same or diff account, region, accpet VPC (to)
+    Have to accept the request on the destination side
+Configure the route table
+    have to add to all the route table in the VPC
+    Source route table: add the destination subnet, target: VPC peering connection
+    Desintation route table: add the source subnet, target: VPC peering connection
+Check network ACL
+Confgiure the security group for the instance
+    Add the destination subnet in the inbound allow rule
+    select the the type of service (ssh or tcp)
+Enable DNS resolution on VPC peering to enable private IP address resolution
+    VPC peering, edit DNS setting
+    click requestor and accepter DNS resolution
+
+Cant have overlap CIDR
+
+
+
+Transitve routing not supported in VPC 
+    aka A + VPC + B + VPC + C 
+    A wont be able to talk to C
+    Need another peering between A and C to talk
+
+VPC endpoints provide access to public AWS services for resources that don't have public IP addressing or where a NAT gateway isn't deployed. 
+There are two types of VPC endpoints: gateway endpoints (used for S3 and DynamoDB) and interface endpoints (used for most other AWS services).
+Endpoints
+    Create endpoints
+    select AWS services and find the services from the list
+    select the VPC you want to attach to 
+    select the route table you want to use
+    full access policy
 
 
 How to create VPN
