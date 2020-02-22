@@ -4,6 +4,7 @@ Create VPC1
 Create VPC internet gateway
     attach to the VPC1
 Create the subnet for the VPC1
+    create public and private subnet
     select the VPC1
 Create a route table
     select the VPC1
@@ -15,14 +16,14 @@ Select the VPC, Action, Modify auto-assign IP address
     Enable Auto-assign Public IPv4
 Select the VPC, Edit DNS hostnames
     Enable DNS hostnames    
-
+    
 
 NAT
 Create a NAT gateway
     Need to place in a public subnet
     With a Elastic IPv4 
-Create a new route table (Private subnet) in that public subnet's VPC
-    Add the Subnet Association in the route table (private subnets)
+Create a new route table (Private subnet) with the VPC
+    Add the private subnets in the Subnet Association
     Add 0.0.0.0/0 and target to NAT gateway
 
 
