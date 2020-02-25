@@ -3,3 +3,5 @@ AWS auto scaling and load balancer
 When configure load balancer if connects to auto scaling group, there is no need to specific a target instance while creating
 
 After setting up the load balancer group, go to auto scaling group and edit detail and target group to point to the load balancer group
+
+Edit Rules in Load balancer to create more type of condition load balancing
