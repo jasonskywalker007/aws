@@ -1,4 +1,9 @@
 
+Creaet a subnet group if not using the VPC
+
+
+
+
 AWS EC2 part
 create an EC2 instance with default setting
 ssh into the EC2 instance
@@ -17,3 +22,6 @@ apply the security group to the RDS instance
 In AWS EC2 instance
 Connect to RDS mysql instance
     mysql -h Host_IP -u admin -p
+
+
+Can use cloudformation to automate the database
