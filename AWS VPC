@@ -33,6 +33,7 @@ Configure the VPC peering
     Have to accept the request on the destination side
 Configure the route table
     have to add to all the route table in the VPC
+    add the route in both the private and public VPC
     Source route table: add the destination subnet, target: VPC peering connection
     Desintation route table: add the source subnet, target: VPC peering connection
 Check network ACL
