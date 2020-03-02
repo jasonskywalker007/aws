@@ -1,0 +1,14 @@
+Group
+IAM groups allow for large-scale management of IAM users. 
+This way, policies can be applied to groups and impact collections of similar users
+
+User
+IAM users are one identity provided by IAM
+Can log in
+
+Role
+IAM roles are assumed by another identity (IAM user, different AWS account or AWS service) allowed in the Trust Policy 
+It has a Permission Policy with time-limited access keys
+
+Policies
+IAM policies are JSON documents that either allow or deny access to combinations of actions and resources

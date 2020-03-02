@@ -1,0 +1,7 @@
+Cname
+
+Route policy 
+    simple
+    failover
+    weighted - not equal to load balancing
+    Latency 
