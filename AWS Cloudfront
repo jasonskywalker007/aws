@@ -1,0 +1,7 @@
+Act like a distrubtion center for resource
+need a S3 or webhosting first
+need a default domain name 
+works with http or https
+public accessiable (truster signer = private distrubtio)
+
+OAI - origin access identity 
