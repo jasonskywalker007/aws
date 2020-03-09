@@ -43,5 +43,16 @@ cloudtrail
     stores 90 days of events
     not real time and deliver in batches bewteen 5 to 50 mins
 
+VPC flow log
+    doesnt monitor the traffic 
+    is not real time
+    can be enabled on a VPC, subnet, or ENI level and monitor traffic metadata for any included interfaces
+    Source and destination IP addresses
+    Source and destination ports
+    Protocol
+    Bytes
+    Start and end
+    ALLOW or REJECT status
+
 Cloudwatch event
     patterns or automatically remediating or automatically responding certain patterns 
