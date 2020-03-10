@@ -48,21 +48,46 @@ Presigned URL
         or the IAM role who created the presigned URL expired 
         can get/put depends on the owner's permission
 
+https://aws.amazon.com/s3/storage-classes/
+
+all the storage type is object
 
 S3 Standard
     general-purpose storage of frequently accessed data
+    no minimum object size or retrieval fee
+    99.99999999999 durability and four nines availability
+
 S3 Intelligent-Tiering
     data with unknown or changing access patterns
-S3 Standard-Infrequent Access (S3 Standard-IA) and S3 One Zone-Infrequent Access (S3 One Zone-IA)
-    long-lived but less frequently accessed data
-Amazon S3 Glacier (S3 Glacier) and Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive)
-    long-term archive and digital preservation
-Intelligent Tiering
+    Designed for durability of 99.999999999% of objects across multiple Availability Zones
+    Resilient against events that impact an entire Availability Zone
     type of storage class that move object between two tiers
     one designed for frequent access, another one is for infrequent
+    minimum 30 days 
 life cycle rule
     object smaller than 128kb cannot be use Intelligent-Tiering
     must be in the original storage class for minimum of 30 days
+    
+S3 Standard-Infrequent Access (S3 Standard-IA) 
+    cheaper than standard.
+    30 day and 128kb minimum charges and object retrieval fee
+    3+ AZ replication
+
+S3 One Zone-Infrequent Access (S3 One Zone-IA)
+    long-lived but less frequently accessed data
+    none-critcal and/or reproducible objects
+    only 1 AZ, 30days and 128kb minimum change
+    Cant use for important data
+
+Amazon S3 Glacier (S3 Glacier)
+    long term archival storage (Warm or cold backup)
+    3+ AZ replication 90 days and 40 kb minimum 
+    retrievals can take mins or hours
+
+Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive)
+    long-term archive and digital preservation
+    180 days and 40 kb minimum
+    longer retrievals - replacement for tape backup
 
 Cross region replication
     keep storage class (can change), object name, owner, object permission
