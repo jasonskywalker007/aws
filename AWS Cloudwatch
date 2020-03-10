@@ -47,6 +47,7 @@ VPC flow log
     doesnt monitor the traffic 
     is not real time
     can be enabled on a VPC, subnet, or ENI level and monitor traffic metadata for any included interfaces
+        includes DNS server, Windows license activation, 169.254.169.254, DHCP, VPC router
     Source and destination IP addresses
     Source and destination ports
     Protocol
