@@ -1,0 +1,23 @@
+Athena is a serverless query engine capable of reading a wide range of data formats from S3
+    Uses a schema-on-read approach to allow SQL-like queries against non-relational data.
+    Result return in seconds
+    work with most of AWS logs
+
+Elastic MapReduce (EMR)
+    an AWS-managed implementation of the Apache Hadoop ecosystem of products
+    use on large scale of data analysis, semi structure or unstructure data
+        master node
+        core node
+        task node
+
+Kinesis and Kinesis Data Firehose are two essential pieces of any high-performance streaming architecture
+    To process real time data
+    Kinesis stream
+    Kinesis shard
+    kinesis data record
+
+Redshift is a petabyte-scale data warehouse product available within AWS
+    It's capable of being used for ad-hoc warehousing/analytics or long-running deployments
+    for analytical workloads
+    column base database
+    targeted datastore after transactions have been processed
