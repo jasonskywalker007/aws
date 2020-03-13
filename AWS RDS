@@ -1,8 +1,16 @@
 
-Creaet a subnet group if not using the VPC
+Creaet a subnet group in the VPC you want to select 
 
-
-
+Relational databases
+    RDS
+Non-relational databases
+Key/value DB
+    DynamoDB
+Document DB 
+    MongoDB
+Column DB
+    Redshift
+Graph DB
 
 AWS EC2 part
 create an EC2 instance with default setting

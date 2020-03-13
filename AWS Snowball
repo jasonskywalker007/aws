@@ -1,0 +1,18 @@
+AWS Snowball, Snowball Edge, and Snowmobile are all products designed to allow huge data transfers in and out of AWS
+
+all of them are big portable hard drives
+
+Snowball 
+    use for IN and OUT of jobs
+    50 TB and 80 TB 
+
+Snowball Edge
+    100 TB
+    10 GB, 10/25 GB, 45/50/100 (QSFP+)
+    can perform local compute (EC2)
+
+Snowmobile
+    physical truck with data center
+    10PB+
+    need to be in a data center
+    

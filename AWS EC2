@@ -19,3 +19,9 @@ volume type
         canot be boot vol
         vol size 500GB to 16TiB
         Max throughput of 250MiB/s and 250 IOPS
+
+        Bootstrapping is the process of providing "build" directives to an EC2 instance. 
+        Bootstrapping in EC2 uses user data and can take in shell script-style commands or cloud-init directives.
+
+        AIM is static configuration, save time
+        Bootstrapping is dynamic configuration, spend more time 

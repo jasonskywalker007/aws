@@ -1,0 +1,5 @@
+Aurora is a custom-designed relational database engine that forms part of RDS. 
+    Rather than an evolution, Aurora significantly replaces much of the traditional MySQL and PostgreSQL architecture in favor of cluster and shared storage architecture
+    which is more scalable and resilient with much higher performance
+
+Cluster volume: Max 64 TB, 6 replica, 3 AZs
