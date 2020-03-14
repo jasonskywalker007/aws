@@ -18,3 +18,9 @@ parallel queries
 
 
 aurora global
+
+Aurora Serverless provides many of the same features Aurora provisioned does, but it abstracts farther away from the concept of database servers. 
+With Aurora Serverless, you indicate your minimum and maxiumum load levels with Aurora Capacity Unit
+the product scales based on the incoming load. Aurora Serverless is also able to scale down to zero, where the only cost is storage
+
+can use query editor to run query
