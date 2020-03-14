@@ -21,3 +21,4 @@ Redshift is a petabyte-scale data warehouse product available within AWS
     for analytical workloads
     column base database
     targeted datastore after transactions have been processed
+

@@ -3,3 +3,18 @@ Aurora is a custom-designed relational database engine that forms part of RDS.
     which is more scalable and resilient with much higher performance
 
 Cluster volume: Max 64 TB, 6 replica, 3 AZs
+
+use base configuration of Cluster
+share storage
+storage replicte 3 or more AZs
+can tolerate 2 failure without write being impacted
+3 failures without impact read
+auto healing
+
+backtrack can roll back up to 72 hours
+    will get an outage but keep all the configuration
+
+parallel queries
+
+
+aurora global
