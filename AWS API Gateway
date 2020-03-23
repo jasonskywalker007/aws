@@ -1,0 +1,13 @@
+API Gateway is a massively important service in AWS, both for real-world usage and for the exam. 
+It allows the creation, management, and optimization of highly scalable API endpoints. 
+API Gateway is a key component of serverless architectures in AWS. 
+In this two-part lesson, we explore the architecture using an example Calculator demo to illustrate the key service components. 
+API Gateway can integrate with other AWS services, including Lambda, to provide API logic
+
+
+Two forms of API   
+    REST
+    Web socket - for high throughput
+
+If you need security then enable CORS support
+

@@ -84,3 +84,9 @@ index
     20 GSI per table
     will have lag so cannot use as strongly consistent read
     can crete after the table is created
+
+    DynamoDB Accelerator (DAX) is an in-memory cache specifically designed for DynamoDB
+    It supports caching eventually consistent reads for items and query results and reduces the latency from single-digit milliseconds to microseconds
+    DAX is ideal for latency-sensitive applications or for read-heavy workloads on consistent data sets
+
+    ElastiCache is an in-memory cache that provides the Memcached and Redis caching engines.
