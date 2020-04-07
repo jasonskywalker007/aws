@@ -1,7 +1,7 @@
 Lambda is an essential service in AWS. It's a Function-as-a-Service product that is a key part of event-driven and serverless architectures
 Function are invoked by event
 perform action up to 15 mins and terminate
-Function are also stateless
+Function are also stateless 
 
 Functions
 Runtimes
