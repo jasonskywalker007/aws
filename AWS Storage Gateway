@@ -1,0 +1,9 @@
+Storage Gateway is capable of running in three modes:
+    File gateway
+    Volume gateway
+    Tape gateway
+It is a virtual appliance used for data center extensions or migrations from on-promised Storage
+
+The Database Migration Service (DMS) is a managed service capable of both migration of relational database and schema conversion
+    schema conversion tool to transfer between difference database engines as part of migration
+    

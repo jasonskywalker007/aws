@@ -1,0 +1,42 @@
+
+Seurity Essential
+
+IAM
+AAA (Authenticate, Authorize, Audit)
+
+Cloudtrail log all the events
+
+Key management services
+    Manage sevice to securely create, control, rotate and use encrpytion keys
+
+VPC flow logs
+    Agentless
+    Enable per ENi, per subnet or per VPC
+    log to AWS cloudwatch
+
+AWS trysted advisor
+    Leverage trsuted advisor to anazlyze your AWS resource for best practice
+
+
+Security gateway to bcakup
+
+
+Networking
+VPC
+    IP subnet between /16 to /24
+    CIDR cannot be modified once create
+    Can add new CIDRs to expand the VPC IP addressing
+Routing
+    Direct traffic out of the VPC
+        internet gateway
+Transit gateway
+
+Route53 
+
+Global Accelerator
+    anycast IP address
+
+VPC NAT and launch wizard 
+
+
+API gateway

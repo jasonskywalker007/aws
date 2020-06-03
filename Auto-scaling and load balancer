@@ -1,0 +1,36 @@
+AWS auto scaling and load balancer
+
+When configure load balancer if connects to auto scaling group, there is no need to specific a target instance while creating
+
+After setting up the load balancer group, go to auto scaling group and edit detail and target group to point to the load balancer group
+
+Edit Rules in Load balancer to create more type of condition load balancing
+
+Application load balancer
+    internet facing or internal
+    Select 2 availability zones
+    need a new security group
+    need to configure a target group
+
+Launch template
+    Create key pair first
+    create a security group 
+        include the SG of the Application load balancer
+        allow other rules: ssh or http
+    Create lunch templates
+        choose AMI 
+        choose instance type
+        select VPC and SG
+        
+Auto Scaling group
+    Create the ASG
+    select lunach templates
+    start w number of the instance you want
+    select the VPC and 2 zones 
+    add scaling policies
+        depends on the situation, either CPU or network load
+        simple scaling policy
+        scaling policy w steps
+        target tracking scaling policy
+            have to create an alarm
+        

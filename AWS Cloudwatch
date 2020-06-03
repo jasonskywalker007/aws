@@ -1,0 +1,81 @@
+It's responsible for metric collection, monitoring, and visualization for most AWS services
+can be extended for on-premises infrastructure and custom applications. 
+    This lesson walks through the architecture of CloudWatch, including:
+        Metrics
+        Data points
+        Retention
+        Namespaces
+        Alarms
+one hour metric are retained for 455 days
+5 mins metric are retained for 63 days
+one min metric for 15 days
+
+three states
+    insufficient
+    alaram
+    ok
+Alarm key components
+    metric 
+    thershold
+    period
+    action
+        SNS
+        auto scaling
+        EC2
+cloudwatch anomaly (has a range of metric and atuo detect)
+
+log event
+    time stamp and raw message
+log stream
+    a sequence of log events with the same source
+log group
+    container for log stream, it controls retetion, monitoring and access control
+
+log metric filter
+    create from a log group
+    able to search the keyword in the log 
+    can create an alarm on top of the filter
+
+cloudtrail 
+    auditing tool that logs all the events
+    it provides full API/account activity logging across all regions in an account and (optionally) all accounts within an AWS Organization
+    event history is the default configuration for cloudtrail
+    stores 90 days of events
+    not real time and deliver in batches bewteen 5 to 50 mins
+
+VPC flow log
+    doesnt monitor the traffic 
+    is not real time
+    can be enabled on a VPC, subnet, or ENI level and monitor traffic metadata for any included interfaces
+        includes DNS server, Windows license activation, 169.254.169.254, DHCP, VPC router
+    Source and destination IP addresses
+    Source and destination ports
+    Protocol
+    Bytes
+    Start and end
+    ALLOW or REJECT status
+
+Cloudwatch event
+    patterns or automatically remediating or automatically responding certain patterns 
+
+AWS Cloudwatch
+
+SNS dashboard first
+Create a topic
+Click Topic, Actions, Subscribe to topic
+Give protocol and alert email
+
+Cloudwatch
+Metrics, (EC2), (CPU), Graphed metrics, Actions, alarm icon
+Name of alarm, Whenever is < 25%, Period (1m)
+Under Actions, Send notification to (the Topic just created)
+
+Create a metric filter in the log group
+filter pattern - looking for certain word (for troubleshooting)
+it will show everytime the word is mentioned
+and can create alarm when the word is trigger
+
+
+IAM
+Create a Policy first with EC2 service, with start/stop Action
+Next, create a roles, choose a service and the policy to apply to it.

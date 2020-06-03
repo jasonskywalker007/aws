@@ -1,0 +1,92 @@
+DynamoDB is a NoSQL NON-RELATIONAL web-scale public database delivered as a service by AWS. 
+It uses the wide-column engine and can scale to nearly infinite performance levels if configured correctly.
+
+partition key (hash key)
+    one attribute
+
+sort key (range key)
+    act like second primary key
+
+can add item into the table as long as one of the key is different
+    primary can be parition or paritition and sort keys combine
+
+will have to read/write the full data (cant pull or get partial data of the item)
+     up to 400kb per item
+
+regional base **
+    store 3 replicas 
+to access, need IAM role or group in the same account using policy
+allow external identity from current account to allow external access
+
+scan by default shows every item in the table
+    even apply filter it still scan through all the data in the table 
+query perform lookup to the table without scan ever Items
+    only ever retrieve data by partition or sort key or both
+    consume the specific range of Items
+
+need to enable restore point and time backup
+    up to 35 days
+
+global table
+    last writer wins rule
+    only able to enable when the table is empty
+    enable streams
+
+DynamoDB has two capacity
+    provisioned throughput
+    on-demand mode
+
+provisioned table includes
+    read capacity units
+    write capacity units
+one RCU read 4kb of data per second
+one WCU write 1kb of data per second
+
+Strongly consistent read
+    get data from leader node
+    leader will use to retrieve data too
+use the same RCU and WCU unit count
+count as per operation
+
+eventually consistent read
+    read from any of the 3 nodes
+    can be not the leader node
+    can get old data from non leader node (tiny chance)
+use the half of the RCU and WCU unit count
+count as per operation
+
+streams 
+    when enabled, stream provides an order list of changes that occurs to an item in the past 24 hours
+    highly resilient
+    four view types
+    KEYS ONLY
+        whenever an item is added, deleted or update. the key is added to the stream
+    NEW IMAGE
+        the entire item is added to the "post-change"
+    OLD IMAGE  
+        the entire item is added to the "pre-change" 
+    NEW AND OLD IMAGE   -   best method
+        both new and old verison items are added to the stream
+
+triggers
+    invoke a function whenever an item is changed in dynamoDB by Lambda
+
+
+index
+    Local secondary indexes and Global secondary indexes 
+    
+    Local secondary indexes (LSIs) allow an alternative view of a table's data to be created, using the same partition key but with an alternative sort key.
+    LSIs can be created only at the time of table creation, and there is currently a limit of five LSIs per table.
+
+    Global secondary indexes (GSIs) allow data in a table to be presented using an alternative partition and sort key
+    GSIs can be used to support alternative data access patterns, allowing efficient use of query operations.
+    they have their own RCU and WCU
+    20 GSI per table
+    will have lag so cannot use as strongly consistent read
+    can crete after the table is created
+
+    DynamoDB Accelerator (DAX) is an in-memory cache specifically designed for DynamoDB
+    It supports caching eventually consistent reads for items and query results and reduces the latency from single-digit milliseconds to microseconds
+    DAX is ideal for latency-sensitive applications or for read-heavy workloads on consistent data sets
+
+    ElastiCache is an in-memory cache that provides the Memcached and Redis caching engines.

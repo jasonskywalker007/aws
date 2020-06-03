@@ -1,0 +1,25 @@
+Lambda is an essential service in AWS. It's a Function-as-a-Service product that is a key part of event-driven and serverless architectures
+Function are invoked by event
+perform action up to 15 mins and terminate
+Function are also stateless 
+
+Functions
+Runtimes
+Runtime environments
+Code upload
+Execution roles
+Logging
+Resources
+Event structure
+Triggers
+
+can setup VPC for Lambda
+
+if needs an OS or CPU, CANT use lambda
+
+Step Functions is a product that can act as the glue between microservices in AWS. 
+It allows for the orchestration of Lambda functions, human interaction, and other AWS resources in a visual workflow way. 
+It offers features similar to Simple Workflow Service (SWF) but does so without any long-running compute instances such as EC2
+
+Step functions is a serverless visual workflow service that provides state machine
+

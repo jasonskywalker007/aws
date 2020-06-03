@@ -1,0 +1,27 @@
+volume type
+    1. General purpose (gp2):SSD
+        3IOPS/Gib (100IOPS to 16000 IOPS) 
+        IOPS is input output per second
+        1GB to 16TiB Max 250 MiB/s
+    2. Provisioned IOPS SSD (io1): SSD
+        Used for application that require sutained IOPS performance
+        Large database workloads
+        Vol size from 4GB to 16TiB up to 64,000 IOPS per volume
+        Max 1,000 MiB/second
+    3. Throughput Optizmied (st1): HDD
+        Low storage cost
+        used for frequently accessed throughput intensive workloads
+        vol 500GB to 16TiB
+        Max throughput of 500 MiB/s and IOPS 500
+    4. Cold HDD (sc1) HDD
+        Lowest cost
+        infrequency acccess data
+        canot be boot vol
+        vol size 500GB to 16TiB
+        Max throughput of 250MiB/s and 250 IOPS
+
+        Bootstrapping is the process of providing "build" directives to an EC2 instance. 
+        Bootstrapping in EC2 uses user data and can take in shell script-style commands or cloud-init directives.
+
+        AIM is static configuration, save time
+        Bootstrapping is dynamic configuration, spend more time 
