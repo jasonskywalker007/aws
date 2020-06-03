@@ -22,3 +22,4 @@ It allows for the orchestration of Lambda functions, human interaction, and othe
 It offers features similar to Simple Workflow Service (SWF) but does so without any long-running compute instances such as EC2
 
 Step functions is a serverless visual workflow service that provides state machine
+
