@@ -1,5 +1,0 @@
-check aws 
-    - aws --version
-
-connect to aws
-    - aws configure

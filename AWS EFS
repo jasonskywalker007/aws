@@ -1,5 +1,0 @@
-EFS an AWS-managed implementation of the Network File System (NFS). 
-It's a popular shared storage system that can be natively mounted as a file system within Linux instances.
-
-for concurrent access, large scale parallel access
-home share
