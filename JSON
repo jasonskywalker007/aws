@@ -1,0 +1,32 @@
+JSON data is written as name/value pairs:
+    A name / value pair consists of a field name (in double quotes)
+    followed by a colon, followed by a value:
+    "firstname" : "David"
+ or "lastname" : "Bombal"
+
+Object
+    Unordered collection of key:value pairs  
+    Data surrounded by curly braces { }
+    Key and value are separated by a colon :
+    Each key/value pair is separated by a comma , (not the last!). 
+    Trailing commas must not be used.
+    Use double quotes, not single quotes.
+    Boolean values must be lowercase (different to Python)
+    Example 1:
+        {"firstName": "David", "lastName": "Bombal"}
+    Example 2:
+        {
+            "firstName" : "David",
+            "lastName" : "Bombal",
+            "website" : "davidbombal.com"
+        }
+
+Array
+
+    Ordered list of values
+    Uses square brackets [ ]
+    Can store multiple types:
+        JSON array can store valid JSON data types
+        such as string, number, Boolean, object, null or
+        another array
+Values must be separated by comma
