@@ -5,6 +5,7 @@ JSON data is written as name/value pairs:
  or "lastname" : "Bombal"
 
 Object
+
     Unordered collection of key:value pairs  
     Data surrounded by curly braces { }
     Key and value are separated by a colon :
@@ -29,4 +30,4 @@ Array
         JSON array can store valid JSON data types
         such as string, number, Boolean, object, null or
         another array
-Values must be separated by comma
+    Values must be separated by comma
