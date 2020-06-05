@@ -31,3 +31,15 @@ Array
         such as string, number, Boolean, object, null or
         another array
     Values must be separated by comma
+
+    
+Practical
+
+    Use the DevNet Nexus always on sandbox
+
+DNS name:
+    sbx-nxos-mgmt.cisco.com
+Protocol: SSH
+Port: 8181
+Username: admin
+Password: Admin_1234!
