@@ -1,0 +1,27 @@
+To run ansible on centOS
+    ansible --version
+
+Need to have the host file configured first
+
+
+
+
+
+
+
+
+ansible example
+
+--- 
+
+- hosts: Router (case senstive)
+  gather_facts: false
+  connection: local
+
+task: (the command to run)
+    - name: Change Hostname to R1 (the name of the task)
+      ios_config: (module)
+        lines: (command to run in global)
+        - hostname R1 (just space no column)
+
+        parents: inteface GigabitEthernet1 (the command will apply underneath this command)
