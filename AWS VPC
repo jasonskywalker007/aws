@@ -17,6 +17,8 @@ Select the VPC, Action, Modify auto-assign IP address
 Select the VPC, Edit DNS hostnames
     Enable DNS hostnames    
     
+Internet gateway is for private subnet
+NAT gateway is for public subnet
 
 NAT
 Create a NAT gateway

@@ -1,0 +1,13 @@
+from store router
+    check routing to AWS
+    ping with source IP
+    
+
+
+not able to connect to AWS
+
+check security group
+check route table
+
+*** check transit gateway routing
+(VPN routing if there is no transit gateway)
